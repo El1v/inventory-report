@@ -17,8 +17,8 @@ class Inventory:
 
         if type == "simples":
             return SimpleReport.generate(products_list)
-        if type == "completo":
-            return CompleteReport.generate(products_list)
+
+        return CompleteReport.generate(products_list)
 
     @staticmethod
     def read_file_csv(path):
