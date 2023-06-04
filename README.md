@@ -1,13 +1,81 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+# Inventory Report
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+## Contexto
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+um gerador de relatórios que recebe como entrada arquivos com dados de um estoque e gera, como saída, um relatório acerca destes dados.
+
+Esses dados de estoque poderão ser obtidos de diversas fontes:
+
+- Através da importação de um arquivo CSV;
+
+- Através da importação de um arquivo JSON;
+
+- Através da importação de um arquivo XML.
+
+Além disso, o relatório final possuirá duas versões: simples e completa
+
+## Técnologias usadas
+
+Aplicação:
+
+> Desenvolvido usando: Python, Pytest
+
+## Habilidades
+
+Adquiri essas habilidades ao desenvolver esse projeto:
+
+- Aplicar conceitos de Orientação a Objetos em Python;
+
+- Aplicar padrões de projeto;
+
+- Leitura e escrita de arquivos (XML, CSV, JSON).
+
+## Instalando Dependências
+
+- clone o projeto:
+
+    ```bash
+    git clone git@github.com:El1v/inventory-report.git
+    ```
+
+> Aplicação
+
+1. **Entre no diretório**
+
+    ```bash
+    cd inventory-report
+    ```
+
+2. **Criar o ambiente virtual**
+
+    ```bash
+    python3 -m venv .venv
+    ```
+
+3. **Ativar o ambiente virtual**
+
+    ```bash
+    source .venv/bin/activate
+    ```
+
+4. **Instalar as dependências no ambiente virtual**
+
+    ```bash
+    python3 -m pip install -r dev-requirements.txt
+    ```
+
+## Executando aplicação
+
+## Executando Testes
+
+- Para rodar todos os Testes:
+
+  ```bash
+  python3 -m pytest
+  ```
+
+- 🐳 Caso queira executar os testes com docker use:
+
+  ```bash
+  docker-compose run --rm inventory pytest
+  ```
